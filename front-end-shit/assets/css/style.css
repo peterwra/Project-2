@@ -24,7 +24,7 @@ h1 {
         transform: translateY(-50px);
         -webkit-transform-origin: 50% 50%;
         transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+        text-shadow: 0 1px 0 #3a3a3a, 0 2px 0 #3a3a3a, 0 3px 0 #3a3a3a, 0 4px 0 #3a3a3a, 0 5px 0 #3a3a3a, 0 6px 0 #3a3a3a, 0 7px 0 #3a3a3a, 0 8px 0 #3a3a3a, 0 9px 0 #3a3a3a, 0 50px 30px rgba(0, 0, 0, 0.3);
     }
 }
 @keyframes text-pop-up-top {
@@ -40,7 +40,7 @@ h1 {
         transform: translateY(-5px);
         -webkit-transform-origin: 50% 50%;
         transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+        text-shadow: 0 1px 0 #3a3a3a, 0 2px 0 #3a3a3a, 0 3px 0 #3a3a3a, 0 4px 0 #3a3a3a, 0 5px 0 #3a3a3a, 0 6px 0 #3a3a3a, 0 7px 0 #3a3a3a, 0 8px 0 #3a3a3a, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -71,11 +71,12 @@ links/buttons
 
 .btn {
     transition: all 300ms ease-in;
-    background-color: #ededed;
+    background-color: #3a3a3a;
+    color: #fff;
 }
 
 .btn:hover {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     opacity: .6;
 }
@@ -98,6 +99,11 @@ forms
 /*
 blocks
 */
+body {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    color: #fff;
+}
 
 /*
 site header
@@ -132,6 +138,7 @@ main-content
 */
 
 .main-content-container {
+    background-image: url("https://unsplash.com/photos/T-mTozAQsmM");
     position: relative;
     text-align: center;
     color: #000;
