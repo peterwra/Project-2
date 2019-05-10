@@ -46,15 +46,27 @@ h1 {
 
 
 .brand-info-item {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Heebo', sans-serif;
+}
+
+::placeholder {
+    font-family: 'Heebo', sans-serif;
 }
 
 .btn {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Heebo', sans-serif;
+}
+
+#get-chart{
+    font-family: 'Heebo', sans-serif;
+}
+
+.table {
+    font-family: 'Heebo', sans-serif;
 }
 
 .copyright {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Heebo', sans-serif;
 }
 
 /*
@@ -94,6 +106,7 @@ forms
     height: 2em;
     padding: 5px;
     margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 /*
@@ -139,7 +152,6 @@ main-content
 */
 
 .main-content-container {
-    background-image: url("https://unsplash.com/photos/T-mTozAQsmM");
     position: relative;
     text-align: center;
     color: #000;
@@ -157,6 +169,7 @@ main-content
 }
 
 /* Chart.js */
+
 @keyframes chartjs-render-animation {
     from {
         opacity: .99
@@ -167,7 +180,11 @@ main-content
 }
 
 .chartjs-render-monitor {
-    animation: chartjs-render-animation 1ms
+    animation: chartjs-render-animation 1ms;
+    background: rgba(255, 255, 255, 0.9);
+    width: 1000px !important;
+    height: 600px !important;
+    margin-bottom: 20px;
 }
 
 .chartjs-size-monitor,
@@ -199,6 +216,19 @@ main-content
     height: 200%;
     left: 0;
     top: 0
+}
+
+#get-chart {
+    background-color: #3a3a3a;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.table {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    width: 800px;
+    margin-bottom: 100px;
 }
 
 
