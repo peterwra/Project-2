@@ -185,6 +185,7 @@ main-content
     width: 1000px !important;
     height: 600px !important;
     margin-bottom: 20px;
+    animation: chartjs-render-animation 1ms
 }
 
 .chartjs-size-monitor,
@@ -230,7 +231,6 @@ main-content
     width: 800px;
     margin-bottom: 100px;
 }
-
 
 /*
 site footer
