@@ -1,9 +1,10 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "root",
+    "database": "dopi_stocks",
     "host": "localhost",
+    "port": 3307,
     "dialect": "mysql"
   },
   "test": {
