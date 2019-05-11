@@ -7,6 +7,7 @@ window.chartColors = {
     green: 'rgb(75, 192, 192)',
     lightBlue: 'rgb(183, 220, 244)',
     darkBlue: 'rgb(86, 108, 122)',
+    blue: 'rgb(54, 162, 235)',
     purple: 'rgb(153, 102, 255)',
     grey: 'rgb(231,233,237)'
 };
@@ -19,6 +20,8 @@ var config = {
             label: 'My First dataset',
             backgroundColor: window.chartColors.lightBlue,
             borderColor: window.chartColors.lightBlue,
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
             data: [
                 1,
                 -2,
@@ -34,6 +37,8 @@ var config = {
             fill: false,
             backgroundColor: window.chartColors.darkBlue,
             borderColor: window.chartColors.darkBlue,
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
             data: [
                 8,
                 -9,

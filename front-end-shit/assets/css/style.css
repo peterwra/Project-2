@@ -152,6 +152,7 @@ main-content
 */
 
 .main-content-container {
+    background-image: url("https://unsplash.com/photos/T-mTozAQsmM");
     position: relative;
     text-align: center;
     color: #000;
@@ -169,7 +170,6 @@ main-content
 }
 
 /* Chart.js */
-
 @keyframes chartjs-render-animation {
     from {
         opacity: .99
@@ -185,6 +185,7 @@ main-content
     width: 1000px !important;
     height: 600px !important;
     margin-bottom: 20px;
+    animation: chartjs-render-animation 1ms
 }
 
 .chartjs-size-monitor,
@@ -230,7 +231,6 @@ main-content
     width: 800px;
     margin-bottom: 100px;
 }
-
 
 /*
 site footer
