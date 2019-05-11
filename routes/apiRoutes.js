@@ -14,6 +14,7 @@ module.exports = function(app) {
         symbol: req.params.company
       }
     }).then(function(dbData) {
+      console.log(dbData)
       res.json(dbData);
     });
   });
