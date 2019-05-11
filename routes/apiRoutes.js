@@ -42,7 +42,7 @@ module.exports = function(app) {
     })
     })
  
-
+//random
   // Delete an example by id
   app.delete("/api/Report/:id", function(req, res) {
     db.Report.destroy({ where: { id: req.params.id } }).then(function(dbData) {
