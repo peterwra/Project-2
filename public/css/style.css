@@ -152,7 +152,6 @@ main-content
 */
 
 .main-content-container {
-    background-image: url("https://unsplash.com/photos/T-mTozAQsmM");
     position: relative;
     text-align: center;
     color: #000;
@@ -170,6 +169,7 @@ main-content
 }
 
 /* Chart.js */
+
 @keyframes chartjs-render-animation {
     from {
         opacity: .99
