@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       longTermDebt: DataTypes.DECIMAL(18,2),
       cash: DataTypes.DECIMAL(18,2),
       netIncome: DataTypes.DECIMAL(18,2), 
-      cash: DataTypes.DECIMAL(18,2),
+      stockPrice: DataTypes.DECIMAL(18,2),
       revenue: DataTypes.DECIMAL(18,2)
     });
     return Report;
