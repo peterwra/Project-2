@@ -1,3 +1,6 @@
+/* eslint-disable quotes */
+/* eslint-disable indent */
+/* eslint-disable prettier/prettier */
 var selectedChartId = "canvas";
 
 window.chartColors = {
@@ -91,10 +94,10 @@ window.onload = function () {
 $(document).ready(function () {
     $("#getchart").on("change", function () {
         // jQuery
-        $("#"+selectedChartId).attr("style", "display: none; height: 811px; width: 1622px;");
+        $("#" + selectedChartId).attr("style", "display: none; height: 811px; width: 1622px;");
         var selectedVal = $(this).find(':selected').val();
         var selectedText = $(this).find(':selected').text();
-        $("#"+selectedVal).attr("style", "display: block; height: 811px; width: 1622px;");
+        $("#" + selectedVal).attr("style", "display: block; height: 811px; width: 1622px;");
         selectedChartId = selectedVal;
 
         console.log(selectedVal);
@@ -103,10 +106,19 @@ $(document).ready(function () {
     $('.chart-div').hide();
     $('.chart-toggle').hide();
     $('.table-div').hide();
-    $('.submit').on('click', function(){
+    $('.submit').on('click', function () {
+        stockQuote = $("#user-input").val().trim();
+        $.ajax("/api/report/" + stockQuote, {
+            type: "GET",
+            data: stockQuote
+        }).then(
+            function () {
+                // location.reload();
+            }
+        );
         $('.form-div').hide();
         $('.chart-div').show();
         $('.chart-toggle').show();
         $('.table-div').show();
-    })
+    });
 });
