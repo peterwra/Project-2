@@ -56,16 +56,15 @@
                 <form class="stock-input">
                     <input type="text" name="stock-symbol" id="user-input" placeholder="Enter stock symbol..">
                     <br>
-                    <button type="button" class="btn">Submit</button>
+                    <button type="button" class="btn submit">Submit</button>
                 </form>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <canvas id="canvas" style="display: block;" width="2838" height="1419"
-                class="chartjs-render-monitor"></canvas>
+        <div class="row justify-content-center chart-div">
+            <canvas id="canvas" class="chartjs-render-monitor"></canvas>
         </div>
-        <div class="row justify-content-center">
-            <select id="getchart">
+        <div class="row justify-content-center chart-toggle">
+            <select id="get-chart">
                 <option value="canvas">See Chart One</option>
                 <option value="chart2">See Chart Two</option>
             </select>
@@ -125,5 +124,4 @@
         </div>
     </footer>
 </body>
-
 </html>
