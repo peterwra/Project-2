@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Heebo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Quicksand|Work+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -38,6 +39,19 @@
     </header>
     <main class="site-content">
         <div class="container main-content-container">
+            <div class="row justify-content-center form-div">
+                <form class="stock-input">
+                    <input type="text" name="stock-symbol" id="user-input" placeholder="Enter stock symbol..">
+                    <br>
+                    <button type="button" class="btn submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center chart-div">
+            <canvas id="canvas" class="chartjs-render-monitor"></canvas>
+        </div>
+        <div class="row justify-content-center chart-toggle">
+            <select id="get-chart">
             <div class="row justify-content-center">
                 <form class="stock-input">
                     <input type="text" name="stock-symbol" id="user-input" placeholder="Enter stock symbol..">
@@ -56,7 +70,50 @@
                 <option value="chart2">See Chart Two</option>
             </select>
         </div>
-        <br><br><br><br><br>
+        <div class="row justify-content-center table-div">
+            <table class="table table-borderless table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Stock</th>
+                    <th scope="col">?</th>
+                    <th scope="col">??</th>
+                    <th scope="col">???</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Oh</td>
+                    <td>Hi</td>
+                    <td>@Mark</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Oh</td>
+                    <td>Hi</td>
+                    <td>@Mark</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Oh</td>
+                    <td>Hi</td>
+                    <td>@Mark</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Oh</td>
+                    <td>Hi</td>
+                    <td>@Mark</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Oh</td>
+                    <td>Hi</td>
+                    <td>@Mark</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer class="site-footer">
         <div class="container site-footer-container">

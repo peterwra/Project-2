@@ -5,6 +5,8 @@ window.chartColors = {
     orange: 'rgb(255, 159, 64)',
     yellow: 'rgb(255, 205, 86)',
     green: 'rgb(75, 192, 192)',
+    lightBlue: 'rgb(183, 220, 244)',
+    darkBlue: 'rgb(86, 108, 122)',
     blue: 'rgb(54, 162, 235)',
     purple: 'rgb(153, 102, 255)',
     grey: 'rgb(231,233,237)'
@@ -16,6 +18,8 @@ var config = {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
             label: 'My First dataset',
+            backgroundColor: window.chartColors.lightBlue,
+            borderColor: window.chartColors.lightBlue,
             backgroundColor: window.chartColors.red,
             borderColor: window.chartColors.red,
             data: [
@@ -31,6 +35,8 @@ var config = {
         }, {
             label: 'My Second dataset',
             fill: false,
+            backgroundColor: window.chartColors.darkBlue,
+            borderColor: window.chartColors.darkBlue,
             backgroundColor: window.chartColors.blue,
             borderColor: window.chartColors.blue,
             data: [
@@ -94,4 +100,13 @@ $(document).ready(function () {
         console.log(selectedVal);
         console.log(selectedText);
     });
+    $('.chart-div').hide();
+    $('.chart-toggle').hide();
+    $('.table-div').hide();
+    $('.submit').on('click', function(){
+        $('.form-div').hide();
+        $('.chart-div').show();
+        $('.chart-toggle').show();
+        $('.table-div').show();
+    })
 });
