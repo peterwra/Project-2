@@ -12,7 +12,10 @@ module.exports = function(app) {
     db.Report.findAll({
       where:{
         symbol: req.params.company
-      }
+      },
+      order:[
+        ["reportDate", "asc"] 
+      ]
     }).then(function(dbData) {
       res.json(dbData);
     });
