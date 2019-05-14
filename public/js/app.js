@@ -237,6 +237,7 @@ $(document).ready(function () {
                     var resRevenue = res[resLength].revenue;
                     dataPoints.push(parseFloat(resNetIncome / resRevenue).toFixed(2));
                 }
+                console.log("CHART 1 DATA POINTS", resNetIncome, resRevenue);
                 var chartDataSet = {
                     label: labelId,
                     backgroundColor: window.chartColors.lightBlue,
@@ -254,14 +255,14 @@ $(document).ready(function () {
                 //////////
                 dataPoints = [];
                 for (var resLength = 0; resLength < res.length; resLength++) {
-                    var resOutstandingShares = res[resLength].outstandingShares;
+                    var resOutstandingShares = parseFloat(res[resLength].outstandingShares) * 1000000;
                     var resStockPrice = res[resLength].stockPrice;
                     var resLongTermDebt = res[resLength].longTermDebt;
                     var resEbit = res[resLength].ebit;
                     console.log(resOutstandingShares, resStockPrice, resLongTermDebt, resEbit);
-                    dataPoints.push(parseFloat(((parseFloat(resOutstandingShares) * parseFloat(resStockPrice)) + parseFloat(resLongTermDebt)) / parseFloat(resEbit)).toFixed(2));
+                    dataPoints.push(parseFloat(((resOutstandingShares * parseFloat(resStockPrice)) + parseFloat(resLongTermDebt)) / parseFloat(resEbit)).toFixed(2));
                 }
-                console.log("MY DATA POINTS", dataPoints);
+                console.log("CHART 2 DATA POINTS", resOutstandingShares, resStockPrice, resLongTermDebt, resEbit);
                 var chartDataSet = {
                     label: labelId,
                     backgroundColor: window.chartColors.lightBlue,
@@ -283,6 +284,7 @@ $(document).ready(function () {
                     var resEbit = res[resLength].ebit;
                     dataPoints.push(parseFloat(resLongTermDebt / resEbit).toFixed(2));
                 }
+                console.log("CHART 3 DATA POINTS", resLongTermDebt, resEbit);
                 var chartDataSet = {
                     label: labelId,
                     backgroundColor: window.chartColors.lightBlue,
